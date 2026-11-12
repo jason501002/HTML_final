@@ -1,0 +1,24 @@
+# Data (course-provided, not redistributed)
+data/
+*.csv
+
+# Model checkpoints and logs
+models/
+*.ckpt
+*.pt
+runs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Editors / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets
+.env
