@@ -1,7 +1,9 @@
 # Track danceability prediction (NTU Machine Learning, final project, 2023)
 
 Final project for NTU's Machine Learning course (Spring 2023, nicknamed "HTML"),
-done by a team of three. The task was an in-class Kaggle competition: predict
+done by a team of three in which each member owned one model. **I built the
+neural network** (and wrote `nn_regressor.py`); my teammates built the
+gradient-boosting models. The task was an in-class Kaggle competition: predict
 a track's **danceability**, an integer from 0 to 9. Inputs are Spotify audio
 features, YouTube engagement counts and categorical metadata. About 15% of the
 values in every feature column are missing, and the public and private parts
@@ -103,8 +105,9 @@ keeps the method and fixes the following issues (see REPORT.md, section 7):
 
 ## Notes
 
-- This was a team project. The experiments and the original report were a
-  joint effort.
+- This was a team project. Each member owned one model family: I built the
+  neural network; my teammates built HGBR and CatBoost. The data analysis,
+  validation protocol and original report were shared.
 - All model scores in REPORT.md come from our final report and were not
   re-run. The dataset statistics (row counts, missing-value rates, skewness)
   were recomputed from the course CSVs.

@@ -1,7 +1,10 @@
 # Predicting track danceability: gradient-boosted trees vs. a small neural network
 
 Technical write-up of a team final project for NTU's Machine Learning course
-(Spring 2023). We were a team of three. This document covers the same ground
+(Spring 2023). We were a team of three, and each of us owned one model family:
+**I built the feed-forward neural network (section 4.3)**, while my teammates
+built the HistGradientBoosting and CatBoost models. The data analysis, validation
+protocol and final comparison were shared. This document covers the same ground
 as our submitted report: the data, the three model families we compared, how
 we validated them, the numbers we got, and what we would do differently.
 
@@ -208,6 +211,8 @@ both. We chose **iterative imputation** for the final CatBoost model because it
 was consistently good on both sets rather than best on one.
 
 ### 4.3 Feed-forward neural network
+
+*This is the part I built.*
 
 This model is called "Linear Neural Network (LN)" in our original report. It
 is a small multilayer perceptron in PyTorch:
